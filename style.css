@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #222;
-    /* background-image: url('https://source.unsplash.com/1600x900/?city'); */
     font-size: 120%;
 }
 
@@ -73,9 +72,11 @@ h1.temp{
 .weather.loading{
     visibility: hidden;
     max-height: 20px;
+    position: relative;
 }
 
 .weather.loading::after{
     visibility: visible;
-    content: "Loading...";
+    content: "Finding your location...";
+    position: absolute;
 }
